@@ -92,19 +92,19 @@ margin-bottom: 20px;
     padding: 10px;
 
 }
-.notFound.trans{
+.trans{
     opacity:1 ;
     display: block;
     transform: scale(1);
     
     transition: 8s;
 }
-.info{
+#info{
     text-align: center;
     margin-top: 10px;
     opacity: 0;
     display: none;
-    transform: scale(0);
+
     transition: .2s;
 
 }
@@ -112,7 +112,7 @@ margin-bottom: 20px;
     width: 90%;
 
 }
-.info .temp{
+#info .temp{
     position: relative;
 
 }
@@ -143,20 +143,5 @@ margin-bottom: 20px;
     padding: 10px;
     border-color:#41014c ;
     width:  50%;
-
-}
-@media(max-width:767px){
-
-body{
-    font-size: 20px;
-    align-items: center;
-    margin-top: 40px;
-
-}
-.container{
-    width: 100%;
-min-height: 100px;
-
-}
 
 }
