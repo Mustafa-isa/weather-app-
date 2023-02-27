@@ -149,13 +149,14 @@ margin-bottom: 20px;
 
 body{
     font-size: 20px;
-    align-items: normal;
+    align-items: center;
     margin-top: 40px;
 
 }
 .container{
     width: 100%;
-    height: auto;
+min-height: 100px;
+
 }
 
 }

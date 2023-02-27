@@ -18,9 +18,9 @@ console.log(notFound , img ,info , degree , condation ,day ,month ,year)
 
 
 btn.addEventListener('click' , function(){
-    if(city !== ''){
-
-        fetch(`https://api.weatherapi.com/v1/forecast.json?key=a98ebbee63a147c0877141605232202&q=${city}`)
+    if(searchBtn.value!== ''){
+let url = `https://api.weatherapi.com/v1/forecast.json?key=a98ebbee63a147c0877141605232202&q=qena`
+        fetch(url)
         .then( response =>{
            return response.json()
         })
