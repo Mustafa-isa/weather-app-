@@ -73,9 +73,12 @@ background-color: rgb(33, 61, 61);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    transform: scale(1);
-    opacity: 1;
-    display: block;
+    transform: scale(0);
+    opacity: 0;
+    transition: 5s;
+    display: none;
+
+   
 }
 .notFound img{
 width: 100%;
@@ -87,5 +90,66 @@ margin-bottom: 20px;
     text-transform: capitalize;
     text-align: center;
     padding: 10px;
+
+}
+.notFound.trans{
+    opacity:1 ;
+    display: block;
+    transform: scale(1);
     
+    transition: 8s;
+}
+.info{
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    display: none;
+    transform: scale(0);
+    transition: .2s;
+
+}
+.info img{
+    width: 90%;
+
+}
+.info .temp{
+    position: relative;
+
+}
+.temp-degree{
+    text-transform: capitalize;
+    font-size: 100px;
+
+}
+.temp i{
+    position: absolute;
+    top: 10px;
+    font-size: 16px;
+
+
+}
+.condation{
+    text-transform: capitalize;
+    font-size: 23px;
+    padding: 10px;
+    color: #065e06;
+}
+.details{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    text-transform: capitalize;
+    border-bottom:  2px  solid;
+    padding: 10px;
+    border-color:#41014c ;
+    width:  50%;
+
+}
+@media(max-width:767px){
+
+body{
+    font-size: 20px;
+}
+
+
 }

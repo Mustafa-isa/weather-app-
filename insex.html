@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="searchBtn" placeholder="enter location here">
+            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>  
+            
+        </div>
+        <div class="notFound ">
+            <img src="./images/404.png" alt="">
+            <p> sorry   location not found</p>
+        </div>
+        <div class="info">
+        <div class="weathre">
+        <img id="img" src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+        <div class="temp">
+            <span class="temp-degree"> 32</span>
+            <i class="fa-solid fa-c"></i>
+        </div>
+      
+        <h4 class="condation">Partly cloudy</h4>
+        </div>
+        <div class="details">
+          <h4 id="dAY">5</h4>
+          <h4 id="month">march</h4>
+          <h4 id="year">2020</h4>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
